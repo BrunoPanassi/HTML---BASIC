@@ -1,0 +1,139 @@
+<!doctype html> <!--Qual é o tipo de documento usado-->
+
+<html> <!--Principal Tag, onde fica todo o código HTML e conteúdo da página-->
+
+    <head><!--Informações importantes que são usadas para a página, mas que não aparecem visualmente-->
+
+        <title>HTML</title><!--Texto que aparecerá na aba da página-->
+
+        <meta charset = "utf-8"/><!--Tag responsável por poder exibir caracteres especiais na página, sendo 'charset' um atributo, e 'utf-8'-->
+                                 <!--responsável pelos caracteres especiais da lingua portuguesa-->
+
+    </head>
+
+    <body><!--Tudo o que vai ser mostrado na página-->
+
+        <h1>Sobre a página</h1><!--(Header) Tag de Cabeçalho, dando um título para o texto da página, tendo outros títulos menores indo de 'h1' até 'h6' por exemplo-->
+
+        Essa é uma página de ajuda para conhecimento de alguns comandos de HTML(HyperText Markup Language), <br /><!--(Break) Quebrar a linha do texto-->
+        com a explicação de algumas tags da linguagem nos comentários desse código
+
+        <hr /><!--(Horizontal Rule) Criar uma linha no texto-->
+
+        <h2>Parágrafo</h2>
+        <p>Nessa parte do código é mostrado o uso do parágrafo,</p><!--Definir um parágrafo-->
+        onde diferente da tag 'br', possui um espaço de uma linha para outra
+        <hr />
+
+        <h2>Formatação de textos</h2>
+        Aqui abaixo segue alguns exemplos de formatação de textos, como:<br />
+        Texto em <strong>negrito</strong><!--Deixar o texto em negrito, antes era utilizada a tag 'b'--><br />
+        Texto em <em>itálico</em><!--(Emphasis) Deixar o texto em itálico, antes era utilizado o 'i'--><br />
+        Texto em <u>sublinhado</u><!--(Underline)Deixar o texto sublinhado--> <br />
+        Texto <s>marcado</s><!--Deixar o texto "riscado", antes era utilizado a tag 'strike'-->
+        <hr />
+
+        <h2>Lista não ordenadas</h2>
+        <ul><!--(Unordered List) Criar uma lista não ordenada-->
+            <li>Item de uma lista não ordenada</li><!--(List Item)Item da lista-->
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <ol><!--(Ordened List) Criar uma lista ordenada-->
+            <li>Item de uma lista ordenada</li>
+        </ol>
+        <hr />
+
+        <h2>Imagens</h2>
+        <img src = "Imagens\html5.png" width="100" height="150"/><!--Inserir uma imagem na página sendo 'src' o caminho do diretório da imagem-->
+                                                                 <!--Onde você pode definir o tamanho da imagem pelo o 'width'(largura) e 'height'(altura)-->
+        <hr />
+
+        <h2>Links</h2>
+        <a href = "link.html"><!--(Anchor) Definir um link, 'href'(Hiperlink Reference) -->
+            Ir para Link
+        </a>
+        <hr />
+
+        <h2>Tabela</h2>
+        <table border = "1" width = "20%"><!--Criar uma tabela, no 'width' foi usado como '20%' pois a tabela irá usar somente 20% da tela, tanto ela estando pequena ou grande-->
+            <tr><!--(Table Row) Linha da tabela-->
+                <th>ID</th><!--(Table Head) Cabeçalho de uma célula da tabela-->
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td>120213</td><!--(Table Data) Dado de uma célula da tabela-->
+                <td>Portal Gun</td>
+                <td>R$ 120</td>
+            </tr>
+
+            <tr>
+                <td>101494</td>
+                <td>'Bad Motherfucker' Wallet</td>
+                <td>R$ 60</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" >Total</td><!--(Column Span) Como o 'colspan' foi setado para 2, ele acabou ocupando as 2 primeiras colunas-->
+                <td>R$ 180</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">Desconto</td><!--Ocupa a quantidade de linhas conforme for setado-->
+                <td>Cumpom1: R$ 1</td>
+                <td>R$ 179</td>
+            </tr>
+
+            <tr>
+                <td>Cumpom2: R$ 100</td>
+                <td>R$ 80</td>
+            </tr>
+
+        </table>
+        <hr />
+
+        <h1>Formulário</h1>
+        <form> <!--Para criar um formulário-->
+            Login:<br />
+            <input type="text" name = "login"/> <br /> <!--Entrada de dados (TextBox) do tipo texto-->
+
+            Senha: <br />
+            <input type="password" name = "senha" /> <br /> <br /> <!--Entrada de dados como senha, onde "esconde" o que está sendo digitado-->
+
+            <input type="submit" value = "Login"/> <br /> <!--Exemplo de 'submit' onde é enviado os dados digitados nos campos acima, ao clicar pode se ver os dados na URL-->
+
+            Sexo: <br />
+            <input type="radio" name = "sexo" />Masculino <br /> <!--Componente do tipo 'RadioButton', onde caso o name seja o mesmo em mais de um, apenas um poderá ser escolhido-->
+            <input type="radio" name = "sexo" />Feminino <br />
+            <br />
+
+            Linguagens de Programação: <br />
+            <input type="checkbox"> JavaScript <br /> <!-- Componente do tipo 'CheckBox'-->
+            <input type="checkbox"> HTML <br />
+            <input type="checkbox"> CSS <br />
+            <br />
+
+            Estado: <br />
+            <select>
+                <option>SP</option> <!--Componente do tipo 'ComboBox'-->
+                <option>RJ</option>
+                <option>MG</option>
+            </select>
+            <br />
+
+            <br />
+            Observações: <br />
+            <textarea></textarea> <br />
+
+            <input type="button" value="Cadastrar" /> <br /> <!--Componente do tipo botão-->
+        </form>
+        <hr />
+
+        <h1>Caracteres Especiais</h1> <!--Pode ser pesquisado por 'HTML Entities'-->
+        
+        &lt;Sinais Maiores&gt; <!--Para mostrar uma entidade sempre começa com '&' e termina com ';' com o seu nome no meio, nesse exemplo foi usado a 'lt(less than)' e 'gt(greater than)'->
+
+    </body>
+</html>
