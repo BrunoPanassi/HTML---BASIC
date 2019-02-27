@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <title>Formulários</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="page-header"> <!--Cabeçalho da página-->
+            <h1>Formulário Bootstrap</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <h3>Cadastre-se</h3>
+                <form>
+                    <div class="form-group"> <!--Agrupa todos os elementos do tipo de um formulário-->
+                        <label for="nome">Nome</label> <!--Quando clicado na label é ativado o input abaixo pois o 'for' possui o mesmo valor que o 'id' do input-->
+                        <input type="text" class="form-control" id="nome"><!--Classe do tipo formulário-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Aceito os termos do serviço
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="opcoes"> PHP <!--Com o mesmo 'name' apenas um pode ser selecionado-->
+                        </label>
+
+                        <label>
+                            <input type="radio" name="opcoes"> Java
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-light">Cadastrar</button>
+                </form>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Logar</h3>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Digite o seu e-mail"> <!--'placeholder' é usado para ter um texto preenchendo o input antes de ser digitado-->
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Digite a sua senha">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Logar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+  </body>
+</html>
