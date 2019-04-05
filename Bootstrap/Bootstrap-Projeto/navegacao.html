@@ -16,47 +16,47 @@
 
     <!--Barra Navegação-->
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container">
-          
-          <div class="navbar-header">
-            <a href="#" class="navbar-brand">Logo</a>
-          </div>
-
-          <div>
-            <ul class="nav navbar-nav justify-content-end">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Empresa</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Clientes</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Produtos</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                  Minha Conta <span class="caret"></span> <!-- A classe 'caret' deixa a flechinha pra baixo-->
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Editais</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">Logout</a>
-                  </li>
-                </ul>
-
-              </li>
-
-            </ul>
-          </div>
-
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Logo</a>
         </div>
+
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barra-navegacao"> <!--A propriedade 'toggler' é para quando a tela minimizada o botão virar o menu-->
+          <span class="navbar-toggler-icon"></span>                                                         <!--'data-target' você coloca qual menu sera colocado-->                                                             
+        </button>
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav justify-content-end ml-auto"><!--'ml-auto' deixa fixado à direita e 'mr-auto' à esquerda-->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Produtos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> <!--'Dropdown-toggle' para ter uma cascata de botões -->
+                Minha Conta <span class="caret"></span> <!-- A classe 'caret' deixa a flechinha pra baixo-->
+              </a>
+
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Editais</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <div class="container">
